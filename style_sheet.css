@@ -65,13 +65,14 @@ ul li:hover{
 
 
 img{
-    width:300px;
-    height:300px;
-    padding:10px;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity: 0.9;
 }
 
 img:hover{
-    color:gray;
+    opacity: 1;
 }
 
 footer{
@@ -90,8 +91,21 @@ footer{
     text-align: center;
 }
 
+
+
+.champion{
+    float:left;
+    width:25%;
+}
+
+.champion p{
+    font-size: 18px;
+}
+
 .img-container{
-    text-align: center;
+    height:250px;
+    width:250px;
+    border: 3px gray solid;
 }
 
 .clear{
@@ -102,4 +116,22 @@ footer{
 /*id*/
 #jackimg{
     transform:rotate(180deg);
+}
+
+
+
+
+@media(max-width:768px){
+    .champion,
+    header nav,
+    header #branding,
+    header li,
+    .champion,
+    .champion p,
+    .img-container
+    {
+       float:none;
+       text-align: center;
+       width:100%;
+    }
 }
